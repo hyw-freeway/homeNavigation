@@ -1,0 +1,11 @@
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+#home{
+    background-color: white;
+    margin-left: 40px;
+    /* width: 1000px; */
+}
