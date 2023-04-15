@@ -32,7 +32,7 @@ export class Visual extends React.Component {
       console.log(container)
       renderer = new THREE.WebGLRenderer({ antialias: true });
       renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(window.innerWidth/2, window.innerHeight);
+      renderer.setSize(window.innerWidth*2/6, window.innerHeight*4/6);
       renderer.setClearColor(0xEEEEEE, 0.0)
       renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);

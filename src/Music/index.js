@@ -32,7 +32,7 @@ export class Music extends React.Component {
       console.log(container)
       renderer = new THREE.WebGLRenderer({ antialias: true });
       renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(window.innerWidth/2, window.innerHeight);
+      renderer.setSize(window.innerWidth*2/6, window.innerHeight*4/6);
       renderer.setClearColor(0xEEEEEE, 0.0)
       renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);
@@ -112,7 +112,7 @@ export class Music extends React.Component {
       controls.minAzimuthAngle = -.6;
       controls.maxAzimuthAngle = .6;
       window.addEventListener('resize', onWindowResize, false);
-      Animations.animateCamera(camera, controls, { x: -4, y: 0, z: 20 }, { x: 0, y: 0, z: 0 }, 1000, () => { });
+      Animations.animateCamera(camera, controls, { x: 4, y: 0, z: 20 }, { x: 0, y: 0, z: 0 }, 1000, () => { });
     }
 
     function onWindowResize() {

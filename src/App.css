@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,46 +35,107 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.link{
+  padding: 10px 0;
+  color: #707172;
+  width: 500px;
+  margin:0 auto
 }
-
-.head{
-  height: 150px !important;
-  font-size: 60px !important;
-  line-height: 150px !important;
-  color: black !important;
+.head {
+  height: 480px;
+  background: url("/public/hometop.jpg") no-repeat center;
 }
-.project{
+.headtitle {
+  padding-top: 100px;
+  font-size: 115px;
+  line-height: 200px;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+.headnote {
+  font-size: 30px;
+  line-height: px;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+.p {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.t {
+  padding-left: 16px;
+  color: aliceblue;
+}
+.project {
   display: flex;
-  border:0.5px solid #282c34;
-}
-.introduction{
-  flex:1;
-  margin:100px 60px 150px 30px
-}
-.title{
-  font-size: 50px;
-  
-}
-.content{
- font-size: 25px;
- margin:30px 0;
- text-align: justify;
-}
 
-.tech{
+  margin: 100px 60px 150px 30px;
+  /* border: 0.5px solid #282c34; */
+}
+.introduction {
+  flex: 1;
+  padding: 20px 30px;
+  margin: auto 10px;
+  font-family: "Georgia", "Times New Roman", serif;
+  border-right: 1px solid #707172;
+    border-bottom: 1px solid #707172;
+    border-left: 2px solid #383737;
+    border-top: 2px solid #383737;
+    box-shadow: 0 5px 5px  #707172;
+}
+.title {
+  font-size: 50px;
+}
+b {
+  line-height: 60px;
+}
+.content {
   font-size: 25px;
-  margin:30px 0;
+  line-height: 30px;
+  margin: 30px 0;
   text-align: justify;
 }
-.enter{
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag {
+  height: 100px;
+  width: 250px;
+  margin: 15px 10px 0 120px;
+}
+.tagweek {
+  height: 100px;
+  width: 250px;
+  margin: 15px 10px 30px 120px;
+}
+.tagtit {
+  border-bottom: 1px solid black;
+  font-size: 23px;
+}
+.tagcon {
+  font-size: 20px;
+}
+.tech {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 20px 0;
+  text-align: justify;
+}
+.techcon {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.enter {
   margin-bottom: 10px;
-  border: 0.5px solid #282c34  ;
+  border: 0.5px solid #282c34;
   height: 40px;
   font-size: 22px;
   line-height: 40px;
 }
-a{
+a {
+  display: block;
+
   text-decoration: none;
   color: black;
-  
+  width: 100%;
 }

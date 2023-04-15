@@ -32,7 +32,7 @@ export class Blog extends React.Component {
       console.log(container)
       renderer = new THREE.WebGLRenderer({ antialias: true });
       renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(window.innerWidth/2, window.innerHeight);
+      renderer.setSize(window.innerWidth*2/6, window.innerHeight*4/6);
       renderer.setClearColor(0xEEEEEE, 0.0)
       renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);
@@ -41,7 +41,7 @@ export class Blog extends React.Component {
       // scene.background = new THREE.TextureLoader().load(background);
       
       camera = new THREE.PerspectiveCamera(60, window.innerWidth / (2*window.innerHeight), 0.1, 1000);
-      camera.position.set(-12, 12, 12);
+      camera.position.set(12, -12, -12);
       camera.lookAt(new THREE.Vector3(1, 1, 1));
 
       const cube = new THREE.Mesh(new THREE.BoxGeometry(0.001, 0.001, 0.001), new THREE.MeshLambertMaterial({}));
@@ -112,7 +112,7 @@ export class Blog extends React.Component {
       controls.minAzimuthAngle = -.6;
       controls.maxAzimuthAngle = .6;
       window.addEventListener('resize', onWindowResize, false);
-      Animations.animateCamera(camera, controls, { x: -4, y: 0, z: 20 }, { x: 0, y: 0, z: 0 }, 1000, () => { });
+      Animations.animateCamera(camera, controls, { x: 4, y: 0, z: 20 }, { x: 0, y: 0, z: 0 }, 1000, () => { });
     }
 
     function onWindowResize() {
